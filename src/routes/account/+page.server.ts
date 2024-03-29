@@ -33,7 +33,7 @@ export const actions: Actions = {
             username: username,
             website: website,
             avatar_url: avatarUrl,
-            updated_at: new Date()
+            updated_at :new Date()
         })
 
         if(error) {
