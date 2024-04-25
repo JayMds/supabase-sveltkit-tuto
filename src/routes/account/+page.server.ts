@@ -52,6 +52,7 @@ export const actions: Actions = {
             avatarUrl
         }
     },
+
     signout: async ({locals: {supabase, getSession}}) => {
         const session = await getSession()
         if(session) {
@@ -59,4 +60,5 @@ export const actions: Actions = {
             throw redirect(303, '/')
         }
     }
+
 }
