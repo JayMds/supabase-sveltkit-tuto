@@ -9,6 +9,5 @@ export const load: PageServerLoad = async ({ url, locals: { getSession } }) => {
     if (session) {
         throw redirect(303, '/account')
     }
-
     return { url: url.origin }
 }
